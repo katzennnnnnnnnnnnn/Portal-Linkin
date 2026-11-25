@@ -105,7 +105,7 @@ public final class PortalLinker {
             if (best == null) return Optional.empty();
 
             if (c.entity() instanceof ServerPlayer player) {
-                player.displayClientMessage(
+                player.sendSystemMessage(
                         Component.literal("Portal verbunden: " + PortalSignature.pretty(c.signature())), true);
             }
             return Optional.of(bestFrame.anchor());

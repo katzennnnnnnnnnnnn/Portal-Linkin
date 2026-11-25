@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "portal-link-helper",
+	"version": "${version}",
+	"name": "Portal Link Helper",
+	"description": "Verbindet Nether-Portale über ihre Eck-Blöcke: Haben ein Portal in der Overworld und eines im Nether dieselben Glazed-Terracotta-Blöcke in den Rahmen-Ecken, führen sie ineinander, egal wo sie stehen.",
+	"authors": [
+		"nicogtd2301"
+	],
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.portallink.helper.PortalLinkMod"
+		]
+	},
+	"mixins": [
+		"portal-link-helper.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": ">=26.1.1 <26.2.0",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

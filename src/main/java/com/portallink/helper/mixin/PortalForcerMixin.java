@@ -13,7 +13,7 @@ import java.util.Optional;
 @Mixin(PortalForcer.class)
 public abstract class PortalForcerMixin {
 
-    @Inject(method = "findClosestPortal", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "findClosestPortalPosition", at = @At("HEAD"), cancellable = true)
     private void portallink$find(CallbackInfoReturnable<Optional<BlockPos>> cir) {
         Optional<BlockPos> match = PortalLinker.find();
         if (match.isPresent()) {
